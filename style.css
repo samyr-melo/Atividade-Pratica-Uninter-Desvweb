@@ -1,0 +1,117 @@
+/*----------------HEADER-------------------*/
+.general__header {
+    display: flex;
+    margin: 2% auto;
+    padding: 0 5%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.header__links {
+    display: flex;
+    gap: 0px;
+
+}
+
+.header__links__link {
+    padding: 20px 80px;
+    color: var(--font-button-color);
+    background-color: transparent;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+   
+}
+
+.header__links__link_f {
+    padding: 20px 80px;
+    color: var(--font-button-color);
+    background-color: transparent;
+    border-right: 2px solid black ;
+    border-left: 2px solid black ;
+    border-radius:0px;
+    transition: all 0.5s ease;
+}
+
+.header__links__link_p {
+    padding: 20px 80px;
+    color: var(--font-button-color);
+    background-color: transparent;
+    border-right: 2px solid black ;
+    border-radius:0px;
+    transition: all 0.5s ease;
+}
+
+.header__links__link:hover, .header__links__link_p:hover,.header__links__link_f:hover {
+    background-color: var(--button-color);
+    transform: scale(1.02);
+
+
+}
+
+
+/*-------------PÁGINA PRINCIPAL---------------*/
+
+.general__main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.general__img {
+   position: relative;
+   
+}
+
+.img__devsam {
+  position: absolute;
+  top: 155px; /* Ajuste a posição vertical */
+  right: 140px; /* Ajuste a posição horizontal */
+  z-index: 1; /* Garante que a imagem fique sobre o texto */
+}
+
+
+.img__devsam {
+    height: 450px;
+    border-radius: 300px 300px 2px 2px;
+    cursor: pointer;
+}
+
+.nome__desenvolvedor {
+    font-family: var(--fonte-oswald);
+    font-size: var(--tamanho-fonte-titulo);
+    padding: 30px;
+}
+.general__page {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin:25% 10% 0 10%; 
+   gap: 25px;
+}
+
+.page__title {
+    font-family: var( --fonte-bebas);
+    font-size: var(--tamanho-fonte-titulo);
+    color: var(--font-color);
+    cursor: pointer;
+}
+
+.page__paragrafo {
+    font-family: var(--fonte-oswald);
+    font-size: var(--tamanho-fonte-paragrafo);
+    color: var(--font-color);
+    text-transform: uppercase;
+
+}
+
+footer {
+    text-align: center;
+    font-family: var(--fonte-yeseva);
+    color: var(--button-color);
+    padding: 0 0 2% 0;
+}
