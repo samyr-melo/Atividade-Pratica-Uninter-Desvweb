@@ -50,6 +50,16 @@
 
 }
 
+@media (max-width: 768px) {
+    .header__links__link_f {
+        border-right: 2px solid black;
+        border-left: 2px solid black;
+    }
+    .header__links__link_p {
+        border-right: 2px solid black;
+    }
+}
+
 
 /*-------------PÁGINA PRINCIPAL---------------*/
 
@@ -59,26 +69,19 @@
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 5% 0;
+    margin: 5% 0 0 0;
 }
 
-.general__img {
-   position: relative;
-   
-}
-
-.img__devsam {
-  position: absolute;
-  top: 155px; /* Ajuste a posição vertical */
-  right: 140px; /* Ajuste a posição horizontal */
-  z-index: 1; /* Garante que a imagem fique sobre o texto */
-}
 
 
 .img__devsam {
-    height: 450px;
-    border-radius: 300px 300px 2px 2px;
-    cursor: pointer;
+  width: 80%;
+  max-width: 600px; /* ajuste conforme necessário */
+  height: auto;
+  border-radius: 300px 300px 2px 2px;
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
 }
 
 .nome__desenvolvedor {
@@ -90,7 +93,7 @@
    display: flex;
    flex-direction: column;
    align-items: center;
-   margin:25% 10% 0 10%; 
+   margin:2% 10% 5% 10%; 
    gap: 25px;
 }
 
@@ -114,4 +117,72 @@ footer {
     font-family: var(--fonte-yeseva);
     color: var(--button-color);
     padding: 0 0 2% 0;
+}
+
+/* ------------------ MEDIA QUERIES ------------------ */
+
+/* Tablet: 768px - 1024px */
+@media (max-width: 1024px) {
+  .general__header {
+    padding: 0 3%;
+    margin: 3% auto;
+  }
+  
+  .header__links__link,
+  .header__links__link_f,
+  .header__links__link_p {
+    padding: 15px 40px;
+  }
+  
+  .img__devsam {
+    max-width: 70%;
+    top: 120px;
+    right: 100px;
+  }
+  
+  .general__page {
+    margin: 20% 8% 0 8%;
+  }
+}
+
+
+/* Mobile: até 599px */
+@media (max-width: 599px) {
+  .header__links__link,
+  .header__links__link_f,
+  .header__links__link_p {
+    padding: 10px 20px;
+    font-size: 0.6em;
+  }
+  
+  .page__title {
+    font-size: 3rem;
+  }
+  
+  .page__paragrafo {
+    font-size: 1rem;
+  }
+  
+  .general__page {
+    gap: 15px;
+  }
+  
+  footer {
+    padding: 0 0 5% 0;
+    font-size: 0.7rem;
+  }
+}
+
+/* Telas muito pequenas (ex: iPhone 5/SE) */
+@media (max-width: 320px) {
+  .header__links__link,
+  .header__links__link_f,
+  .header__links__link_p {
+    padding: 8px 15px;
+    font-size: 0.8em;
+  }
+  
+  .page__paragrafo {
+    font-size: calc(var(--tamanho-fonte-paragrafo) * 0.7);
+  }
 }
