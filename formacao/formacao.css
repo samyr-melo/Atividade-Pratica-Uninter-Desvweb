@@ -1,0 +1,47 @@
+
+    :root {
+    --tamanho-fonte-titulo: 9.5rem;
+    --tamanho-fonte-paragrafo: 2rem;
+    --fonte-yeseva: "Yeseva One", serif;
+    --fonte-oswald: "Oswald", sans-serif;
+    --fonte-bebas: "Bebas Neue", sans-serif;
+
+    --font-color: #E7EFC7;
+    --button-color: #8A784E;
+    --font-button-color: #AEC8A4;
+    
+
+}
+
+
+.formacao {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    color: var(--font-color);
+    margin:2% 10% 5% 10%; 
+}
+h1 {
+    text-align: center;
+    justify-content: center;
+    font-family: var(--fonte-oswald);
+    font-size: var(--tamanho-fonte-paragrafo);
+    color: var(--font-color);
+    text-transform: uppercase;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+li {
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+p {
+    font-size: var(--tamanho-fonte-paragrafo);
+}
