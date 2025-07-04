@@ -38,3 +38,50 @@ li {
 p {
     font-size: var(--tamanho-fonte-paragrafo);
 }
+
+/* Mobile Version */
+@media screen and (max-width: 768px) {
+    .formacao_main {
+        gap: 30px;
+        margin: 10% 0 0 0;
+        padding: 10% 5%; /* Reduced side padding for mobile */
+    }
+
+    h1 {
+        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.9); /* Slightly smaller font */
+    }
+
+    ul {
+        gap: 8px;
+    }
+
+    li {
+        font-size: 1.4rem; /* Smaller font size for list items */
+    }
+
+    p {
+        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.85); /* Slightly smaller paragraph text */
+    }
+
+
+}
+
+/* For very small devices */
+@media screen and (max-width: 480px) {
+    .formacao_main {
+        gap: 20px;
+        padding: 12% 5%;
+    }
+
+    h1 {
+        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.8);
+    }
+
+    li {
+        font-size: 1.2rem;
+    }
+
+    p {
+        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.75);
+    }
+}
