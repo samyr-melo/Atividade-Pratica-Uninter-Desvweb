@@ -12,7 +12,7 @@ body {
    background-color: #3B3B1A;
 }
 :root {
-    --tamanho-fonte-titulo: 9.5rem;
+    --tamanho-fonte-titulo: 4.5rem;
     --tamanho-fonte-paragrafo: 2rem;
     --fonte-yeseva: "Yeseva One", serif;
     --fonte-oswald: "Oswald", sans-serif;
@@ -21,7 +21,8 @@ body {
     --font-color: #E7EFC7;
     --button-color: #8A784E;
     --font-button-color: #AEC8A4;
-    
+    --fundo-form:#74912511 ;
+    --fundo-form_header:#3B3B1A ;
 
 }
 

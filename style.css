@@ -1,12 +1,18 @@
 /*----------------HEADER-------------------*/
 .general__header {
     display: flex;
-    margin: 2% auto;
+    margin: 0% auto;
     padding: 0 5%;
     text-align: center;
     justify-content: center;
     align-items: center;
     text-transform: uppercase;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--fundo-form_header);
 }
 
 .header__links {
@@ -16,7 +22,7 @@
 }
 
 .header__links__link {
-    padding: 20px 80px;
+    padding: 15px 80px;
     color: var(--font-button-color);
     background-color: transparent;
     border-radius: 0px;
@@ -25,7 +31,7 @@
 }
 
 .header__links__link_f {
-    padding: 20px 80px;
+    padding: 15px 80px;
     color: var(--font-button-color);
     background-color: transparent;
     border-right: 2px solid black ;
@@ -35,7 +41,7 @@
 }
 
 .header__links__link_p {
-    padding: 20px 80px;
+    padding: 15px 80px;
     color: var(--font-button-color);
     background-color: transparent;
     border-right: 2px solid black ;

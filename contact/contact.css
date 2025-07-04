@@ -1,16 +1,22 @@
-.general__main {
+ .contact__main {
     display: flex;
     flex-direction: column;
     text-align: center;
     justify-content:center;
     align-items: center;
-    margin: 5% 0 0 0;
-    gap: 2rem;
-}
+    margin: 5% 0 5% 0;
+    padding: 5% 0;
+    gap: 3rem;
+} 
 
+.page__contact{
+  color: var(--font-color);
+  font-size: 4rem;
+}
 
 .email-btn {
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 8px;
   padding: 10px 16px;
@@ -22,61 +28,44 @@
   font-size: 16px;
   font-weight: 600;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  transition: all 0.9s ease;
 }
 
 .email-btn:hover {
   background: linear-gradient(135deg, #524604, #0e1401);
-  transform: translateY(-2px);
+  transform: translateY(-4px);
   box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
-.email-btn:active {
-  transform: translateY(0);
+
+
+
+/*config form*/
+label {
+  font-size: 18px;
+  font-family: var(--fonte-yeseva);
+  color: var(--font-color);
+}
+.form {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ text-align: center;
+ padding: 4% 7%;
+ background-color:var(--fundo-form);
+ gap: 1rem;
+ border-radius: 1rem;
 }
 
-.email-btn .icon {
+
+input {
+  padding:.3rem 0;
+  padding-right: 10rem;
   font-size: 18px;
 }
 
-/* Feedback visual quando o e-mail é copiado */
-.email-btn.copied {
-  background: linear-gradient(135deg, #4caf50, #2e7d32);
-}
-
-.email-btn.copied .text::after {
-  content: "✔";
-  margin-left: 8px;
-}
-
-/* botao do linkedin */
-
-.linkedin-button {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  padding: 10px 16px;
-  background: linear-gradient(135deg, #7baf03, #3f5002);
-  color: white;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
-
-.linkedin-button:hover {
-background: linear-gradient(135deg, #524604, #0e1401);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-}
-
-.linkedin-button:active {
-  transform: translateY(0);
-}
-
-.linkedin-button i {
-  font-size: 20px;
+.mensagem {
+  padding-bottom:70%;
+  font-size:18px;
+  
 }

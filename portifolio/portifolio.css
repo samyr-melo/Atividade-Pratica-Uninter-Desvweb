@@ -1,17 +1,4 @@
 
-    :root {
-    --tamanho-fonte-titulo: 9.5rem;
-    --tamanho-fonte-paragrafo: 2rem;
-    --fonte-yeseva: "Yeseva One", serif;
-    --fonte-oswald: "Oswald", sans-serif;
-    --fonte-bebas: "Bebas Neue", sans-serif;
-
-    --font-color: #E7EFC7;
-    --button-color: #8A784E;
-    --font-button-color: #AEC8A4;
-    
-
-}
 
 .formacao {
     display: flex;

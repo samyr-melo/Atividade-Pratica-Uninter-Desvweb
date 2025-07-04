@@ -6,17 +6,20 @@
 
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="./about/about.html">
+    <link rel="stylesheet" href="./about/about.css">
+    <link rel="stylesheet" href="./formacao/formacao.css">
+    <link rel="stylesheet" href="./portifolio/portifolio.css">
+    <link rel="stylesheet" href="./contact/contact.css">
 
     <title>Portifolio pessoal</title>
 </head>
 <body>
     <header class="general__header">
             <div class="header__links">
-                <a class="header__links__link" href="./about/about.html" target="_blank" rel="noopener noreferrer">Sobre mim</a>
-                <a class="header__links__link_f" href="./formacao/formacao.html"  target="_blank" rel="noopener noreferrer">Formação</a>
-                <a class="header__links__link_p" href="./portifolio/portifolio.html"  target="_blank" rel="noopener noreferrer">Portifólio</a>
-                <a class="header__links__link" href="./contact/contact.html"  target="_blank" rel="noopener noreferrer">Contato</a>
+                <a class="header__links__link" href="#sobre" target="_blank" rel="noopener noreferrer">Sobre mim</a>
+                <a class="header__links__link_f" href="#formacao"  target="_blank" rel="noopener noreferrer">Formação</a>
+                <a class="header__links__link_p" href="#portifolio"  target="_blank" rel="noopener noreferrer">Portifólio</a>
+                <a class="header__links__link" href="#contato"  target="_blank" rel="noopener noreferrer">Contato</a>
             </div>    
     </header>
     <main>
@@ -31,6 +34,80 @@
             </div>
            
         </section>    
+
+        <section id="sobre" class="sobre_main">
+            <div class="general__img">
+               <h1 class="page__title">SOBRE MIM</h1>                
+            </div>
+            <div class="general__page">
+                <p class="page__paragrafo">Minha trajetória profissional com carteira assinada vem desde meus 18 anos, o que é permitido por lei, mas eu desenvolvo atitividades remuneradas desde meus 16 anos. Fui vendedor autônomo de açaí, trufas em ônibus, até trabalho temporário como auxiliar de estoque em uma loja de roupas no centro de Manuas. No ano de 2020 estava cursando graduação no IFAM, e consegui um emprego de auxiliar de laboratório em uma Farmácia de Manipulação, onde permaneci por 4 meses. Após esse período, fui chamado para outro desafio, no distrito de Manaus, Innova, fábrica de extrudados, onde iniciei como operador I, em março de 2020, e hoje, operador de estação II. <br>Atualmente, estou graduando em Análise e Desenvolvimento de Sistemas, pela Uninter, e fazendo cursos por fora, para formar um boa base de conhecimentos. Tenho projetos em React, Javascript puro, e estudos em Modelagem de Dados. </br> </p>
+            </div>
+            
+        </section> 
+
+        <div id="formacao" class="formacao_main">
+                <h1 class="page__title">FORMAÇÕES</h1>
+                <p class="">ENSINO SUPERIOR EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - UNINTER</p>
+                <ul>
+                    <li>Curso de IA Generativa | Santander Open Academy</li>
+                    <li>Modelagem de Dados: identificando entidades, atributos, relacionamentos</li>
+                    <li>React: construindo componentes com JSX</li>
+                    <li>React: configurando e estruturando projetos com Vite</li>
+                    <li>SQLite online: conhecendo instruções SQL</li>
+                    <li>SQLite online: executando consultas SQL</li>
+                    <li>Git e GitHub: compartilhando e colaborando em projetos</li>
+                    <li>NodeJs e Terminal: dominando o ambiente de desenvolvimento front-end</li>
+                    <li>Lógica de programação: mergulhe em programação com JavaScript.</li>
+                    <li>Lógica de programação: praticando com desafios</li>
+                    <li>Lógica de programação: explore funções e listas.</li>
+                    <li>HTML e CSS: Classes, posicionamento e Flexbox.</li>
+                    <li>HTML e CSS: cabeçalho, footer e variáveis CSS.</li>
+                    <li>HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags.</li>
+                    <li>HTML e CSS: trabalhando com responsividade e publicação de projetos.</li>
+                    <li>HTML e CSS: praticando HTML e CSS.</li>
+                    <li>Imersão Front-end | 2ª Edição | Alura </li>
+                    <li>Pacote Office Básico</li>
+                    <li>Integrando serviços de nuvem ao backend | Samsung Ocean</li>
+                    <li>Introdução à Back-End | Samsung Ocean</li>
+                    <li>Desenvolvimento Ágil: DevOps Docker | Samsung Ocean</li>
+                    <li>Desenvolvimento Ágil: DevOps GIT | Samsung Ocean</li>
+
+                </ul>
+            </div>
+
+
+            <div id="portifolio" class="formacao_main">
+                <h1 class="page__title">PORTIFÓLIO</h1>
+                <h1 >alguns dos principais projetos publicados</h1>
+                <div><p>para ver mais projetos acesse meu<a href="https://github.com/samyr-melo"> github </a>e meu<a href="https://www.linkedin.com/in/dev-samyrmelo/"> linkedin</a></p></div>
+
+            
+                <ul>
+                    <li><a href="https://samyr-melo.github.io/To-do-list-js-puro-/">Plataforma de Tarefas</a></li>
+                    <li><a href="https://samyr-melo.github.io/pagina-de-acesso-com-react/">Login | CodeConnect</a></li>
+                    <li><a href="https://samyr-melo.github.io/praticando-html-e-css-responsivel/">Alura + Alura língua</a></li>
+                    <li><a href="https://samyr-melo.github.io/page_react_vite/">Perfil in React | Sachina</a></li>
+                </ul>
+            </div>
+
+        <div id="contato" class="contact__main">
+        <h1 class="page__contact">Entre em contato diretamente comigo:</h1>
+        <!-- 1. O formulário que agrupa tudo -->
+<form class="form">
+    <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome">
+    </div>
+    <div>
+        <label for="email">Email:</label>
+        <input type="text" id="email">
+    </div>
+        <label for="mensagem">Mensagem:</label>
+        <textarea class="mensagem" name="mensagem" id="mensagem"></textarea>
+
+        <button class="email-btn" type="submit">Enviar</button>
+    
+</form>
     </main>
     <footer>
         &copy;Desenvolvido por Samyr Melo
