@@ -131,7 +131,13 @@ footer {
 @media (max-width: 1024px) {
   .general__header {
     padding: 0 3%;
-    margin: 3% auto;
+    margin: 0% auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--fundo-form_header);
   }
   
   .header__links__link,
@@ -154,6 +160,16 @@ footer {
 
 /* Mobile: até 599px */
 @media (max-width: 599px) {
+  .general__header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--fundo-form_header);
+  }
+
   .header__links__link,
   .header__links__link_f,
   .header__links__link_p {
