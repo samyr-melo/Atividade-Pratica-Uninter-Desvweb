@@ -41,3 +41,54 @@ p {
     font-size: var(--tamanho-fonte-paragrafo);
 }
 
+
+
+/* Mobile Version (up to 700px) */
+@media (max-width: 700px) {
+    .formacao {
+        gap: 30px;
+        margin: 5% 5% 8% 5%; /* Reduced margins on mobile */
+    }
+
+
+    ul {
+        gap: 8px;
+    }
+
+    li a {
+        font-size: 1rem; /* Smaller font size for links */
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    /* Optional: Adjust link colors for better mobile visibility */
+    a {
+        color: #5a7a54; /* Slightly darker shade for better mobile visibility */
+    }
+    
+    li a {
+        color: var(--font-color);
+    }
+}
+
+/* For very small devices (optional) */
+@media screen and (max-width: 480px) {
+    .formacao {
+        gap: 20px;
+        margin: 8% 3% 10% 3%;
+    }
+
+    h1 {
+        font-size:1rem;
+    }
+
+    li a {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
