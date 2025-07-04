@@ -40,7 +40,7 @@ p {
 }
 
 /* Mobile Version */
-@media screen and (max-width: 768px) {
+@media (max-width: 599px) {
     .formacao_main {
         gap: 30px;
         margin: 10% 0 0 0;
@@ -48,7 +48,7 @@ p {
     }
 
     h1 {
-        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.9); /* Slightly smaller font */
+        font-size: 2rem
     }
 
     ul {
@@ -56,32 +56,13 @@ p {
     }
 
     li {
-        font-size: 1.4rem; /* Smaller font size for list items */
+        font-size: 1rem; /* Smaller font size for list items */
     }
 
-    p {
-        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.85); /* Slightly smaller paragraph text */
+    .title {
+        font-size: 1rem;
     }
 
 
 }
 
-/* For very small devices */
-@media screen and (max-width: 480px) {
-    .formacao_main {
-        gap: 20px;
-        padding: 12% 5%;
-    }
-
-    h1 {
-        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.8);
-    }
-
-    li {
-        font-size: 1.2rem;
-    }
-
-    p {
-        font-size: calc(var(--tamanho-fonte-paragrafo) * 0.75);
-    }
-}
