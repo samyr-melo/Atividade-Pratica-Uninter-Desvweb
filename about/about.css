@@ -1,3 +1,5 @@
+/* ESTILO DO SOBRE MIM */
+
 .sobre_main {
     display: flex;
     flex-direction: column;
@@ -8,8 +10,6 @@
     padding: 5% 0;
     background-color: var(--fundo-form);
 }
-
-
 
 .formacao {
     display: flex;

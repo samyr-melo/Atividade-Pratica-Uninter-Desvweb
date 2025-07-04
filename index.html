@@ -3,27 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- ------------------LINK DE ESTILO PARA CADA ITEM------------------ -->
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./about/about.css">
     <link rel="stylesheet" href="./formacao/formacao.css">
     <link rel="stylesheet" href="./portifolio/portifolio.css">
     <link rel="stylesheet" href="./contact/contact.css">
-
     <title>Portifolio pessoal</title>
 </head>
 <body>
+    <!-- ------------------CABEÇALHO COM CLASSES DE ESTILOS------------------ -->
     <header class="general__header">
             <div class="header__links">
+                <a class="header__links__link_p" href="#home" target="_blank" rel="noopener noreferrer">Home</a>
                 <a class="header__links__link" href="#sobre" target="_blank" rel="noopener noreferrer">Sobre mim</a>
                 <a class="header__links__link_f" href="#formacao"  target="_blank" rel="noopener noreferrer">Formação</a>
                 <a class="header__links__link_p" href="#portifolio"  target="_blank" rel="noopener noreferrer">Portifólio</a>
                 <a class="header__links__link" href="#contato"  target="_blank" rel="noopener noreferrer">Contato</a>
             </div>    
     </header>
+    <!-- ------------------PÁGINA PRINCIPAL------------------ -->
     <main>
-        <section class="general__main">
+        <section id="home" class="general__main">
             <div class="general__img">
                 <h1 class="page__title">SAMYR MELO</h1>
                 <img class="img__devsam" src="./assets/IMG_5144.jpg" alt="">
@@ -34,7 +37,7 @@
             </div>
            
         </section>    
-
+        <!-- ------------------PÁGINA SOBRE MIM------------------ -->
         <section id="sobre" class="sobre_main">
             <div class="general__img">
                <h1 class="page__title">SOBRE MIM</h1>                
@@ -44,9 +47,10 @@
             </div>
             
         </section> 
-
+        <!-- ------------------PÁGINA FORMAÇÃO------------------ -->
         <div id="formacao" class="formacao_main">
                 <h1 class="page__title">FORMAÇÕES</h1>
+                <!-- ------------------lista não ordenada com todas minhas formações e certificados na área------------------ -->
                 <p class="title">ENSINO SUPERIOR EM ANÁLISE E DESENVOLVIMENTO DE SISTEMAS - UNINTER</p>
                 <ul>
                     <li>Curso de IA Generativa | Santander Open Academy</li>
@@ -75,13 +79,13 @@
                 </ul>
             </div>
 
-
+            <!-- ------------------PÁGINA PORTIFÓLIO------------------ -->
             <div id="portifolio" class="formacao_main">
                 <h1 class="page__title">PORTIFÓLIO</h1>
                 <h1 >alguns dos principais projetos publicados</h1>
                 <div><p>para ver mais projetos acesse meu<a href="https://github.com/samyr-melo"> github </a>e meu<a href="https://www.linkedin.com/in/dev-samyrmelo/"> linkedin</a></p></div>
 
-            
+            <!-- -----------------lista não ordenada com links úteis------------------ -->
                 <ul>
                     <li><a href="https://samyr-melo.github.io/To-do-list-js-puro-/">Plataforma de Tarefas</a></li>
                     <li><a href="https://samyr-melo.github.io/pagina-de-acesso-com-react/">Login | CodeConnect</a></li>
@@ -89,10 +93,10 @@
                     <li><a href="https://samyr-melo.github.io/page_react_vite/">Perfil in React | Sachina</a></li>
                 </ul>
             </div>
-
+        <!-- ------------------PÁGINA CONTATO------------------ -->
         <div id="contato" class="contact__main">
         <h1 class="page__contact">Entre em contato diretamente comigo:</h1>
-        <!-- 1. O formulário que agrupa tudo -->
+        <!-- O formulário contém label, input e submit -->
 <form class="form">
     <div>
         <label for="nome">Nome:</label>
